@@ -20,6 +20,7 @@ struct FavoriteButtonView: View {
             )
             .labelStyle(.iconOnly)
             .foregroundColor(isSet ? .yellow : .gray)
+            .scaleEffect(1.5)
         }
 
     }
