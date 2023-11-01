@@ -13,7 +13,7 @@ struct LandmarkListView: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
-    private var landmarksToShow: [Landmark] {
+    private var listToShow: [Landmark] {
         showFavoritesOnly
         ? modelData.favorites
         : modelData.landmarks
@@ -26,7 +26,7 @@ struct LandmarkListView: View {
                     Text("Favorites only")
                 }
                 
-                ForEach(landmarksToShow) { landmark in
+                ForEach(listToShow) { landmark in
                     NavigationLink {
                         LandmarkDetailView(landmark: landmark)
                     } label: {
