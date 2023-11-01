@@ -1,5 +1,5 @@
 //
-//  CategoryHome.swift
+//  CategoriesView.swift
 //  LandmarkSUI
 //
 //  Created by Виталий Гринчик on 24.09.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategoryHome: View {
+struct CategoriesView: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
     
@@ -45,7 +45,7 @@ struct CategoryHome: View {
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHome()
+        CategoriesView()
             .environmentObject(ModelData())
     }
 }

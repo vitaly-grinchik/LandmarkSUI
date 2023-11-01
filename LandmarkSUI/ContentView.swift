@@ -19,13 +19,13 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            CategoryHome()
+            CategoriesView()
                 .tabItem {
                     Label("Featured", systemImage: "star")
                 }
                 .tag(Tab.featured)
             
-            LandmarkList()
+            LandmarkListView()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }

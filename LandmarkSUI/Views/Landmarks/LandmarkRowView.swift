@@ -1,5 +1,5 @@
 //
-//  LandmarkRow.swift
+//  LandmarkRowView.swift
 //  LandmarkSUI
 //
 //  Created by Виталий Гринчик on 21.09.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LandmarkRow: View {
+struct LandmarkRowView: View {
     var landmark: Landmark
 
     var body: some View {
@@ -29,7 +29,7 @@ struct LandmarkRow: View {
 
 struct LandmarkRow_Previews: PreviewProvider {    
     static var previews: some View {
-        LandmarkRow(landmark: ModelData().landmarks[0])
+        LandmarkRowView(landmark: ModelData().landmarks[0])
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }
